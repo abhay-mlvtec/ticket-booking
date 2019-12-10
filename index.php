@@ -265,7 +265,10 @@
 							$('.'+seat_id[1]).removeClass("seat");
 							$('.'+seat_id[1]).addClass("bg-success");
 							$('.'+seat_id[1]).unbind("click");
-
+							$('#usr_name').val('');
+							$('#usr_email').val('');
+							$('#usr_mobile').val('');
+							$('.info').hide();
 						});
 						$('.alert-dismissible').show();
 					}
