@@ -259,6 +259,12 @@
 				success: function(result){
 					console.log(result);
 					if(result.status == "success"){
+						$.each(selected_ids, function(key, value) {
+							var seat_id = value.split("_");
+							$('.'+seat_id[1]).removeClass("active");
+							$('.'+seat_id[1]).removeClass("seat");
+							$('.'+seat_id[1]).addClass("bg-success");
+						});
 						$('.alert-dismissible').show();
 					}
 					else{
