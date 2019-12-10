@@ -264,6 +264,8 @@
 							$('.'+seat_id[1]).removeClass("active");
 							$('.'+seat_id[1]).removeClass("seat");
 							$('.'+seat_id[1]).addClass("bg-success");
+							$('.'+seat_id[1]).unbind("click");
+
 						});
 						$('.alert-dismissible').show();
 					}
@@ -274,6 +276,7 @@
 							  $('.'+key).removeClass('seat');
 							  $('.'+key).removeClass('active');
 							  $('.'+key).addClass('booked');
+							  $('.'+key).unbind("click");
 							});
 							$('.alert-dismissible').removeClass('alert-success');
 							$('.alert-dismissible').addClass(' alert-warning');
