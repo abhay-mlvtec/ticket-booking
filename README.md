@@ -24,4 +24,5 @@ $composer install
 ## Setting up project config
 ### Database config
 -> Set the values for username, password, host inside 'validate_API/dbconnect.php' or you can set db connection string in environment variable DATABASE_URL = 'DB_connection_string'
+
 -> Setup db schema from sql dumps inside sql dumps folder
